@@ -1,3 +1,5 @@
+require 'csv'
+
 class MoviesController < ApplicationController
   def index
     @movies = CSV.read(("db/netflix_titles.csv"), headers: true, col_sep: ",")
