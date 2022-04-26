@@ -1,0 +1,10 @@
+<%= link_to "Previous Page", root_path(page: @page_number - 1) %>
+<%= link_to "Next Page", root_path(page: @page_number + 1) %>
+
+<h3>Current page number: <%= @total_page_number %></h3>
+<h1>Movie titles</h1>
+<% @movies.each do |movie| %>
+  <h4> <%= movie["title"] %> | (<%= movie["release_year"] %>) </h4>
+  <h5> <%= movie["type"] %> </h5>
+  <h6> <%= movie["description"] %> </h6>
+<% end %>
