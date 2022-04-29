@@ -1,6 +1,6 @@
-= link_to "Next Page", root_path(page: @page_number + 1)
+= paginate(@movies_on_current_page)
 %h1 Movie titles
-- @movies.each do |movie|
+- @movies_on_current_page.each do |movie|
   %h5
     = movie["title"]
     | #{movie["director"]}

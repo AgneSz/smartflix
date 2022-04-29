@@ -20,5 +20,6 @@ module Smartflix
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("lib/services")
+    config.eager_load_paths << Rails.root.join('lib')
   end
 end
