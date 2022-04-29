@@ -1,8 +1,13 @@
 = paginate(@movies_on_current_page)
-%h1 Movie titles
-- @movies_on_current_page.each do |movie|
-  %h5
-    = movie["title"]
-    | #{movie["director"]}
-  %h6
-    = movie["description"]
+%span.d-block Movie titles
+.row.row-cols-1.row-cols-md-4.g-4
+  - @movies_on_current_page.each do |movie|
+    .col
+      .card.h-100
+        %img.card-img-top{:alt => "...", :src => "https://via.placeholder.com/150"}/
+        .card-body
+          %h4.card-title
+            = movie["title"]
+            (#{movie["release_year"]})
+          %h4.card-title= movie["type"]
+          %p.card-text= movie["description"]
