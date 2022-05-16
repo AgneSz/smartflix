@@ -15,8 +15,9 @@ RSpec.describe Movie, type: :model do
     # ===>FactoryBot<===
     # movie = FactoryBot.create(:movie)
     # We can skip FactoryBot.create after adding conf in rails_helper.rb
+    # it 'is a movie' do
     # movie = create(:movie)
-    # expect(:movie.release_year).to be_valid
+    # expect(movie.release_year).to eq(2010)
   end
 
   it "is not valid without a show_type" do
