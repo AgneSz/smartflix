@@ -11,6 +11,12 @@ RSpec.describe Movie, type: :model do
   it "is not valid without a release_year" do
     movie = Movie.new(release_year: nil)
     expect(movie).to_not be_valid
+
+    # ===>FactoryBot<===
+    # movie = FactoryBot.create(:movie)
+    # We can skip FactoryBot.create after adding conf in rails_helper.rb
+    # movie = create(:movie)
+    # expect(:movie.release_year).to be_valid
   end
 
   it "is not valid without a show_type" do

@@ -1,16 +1,14 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
-require 'rake'
 
-Rails.application.load_tasks
+Rails.application.load_tasks 
 
-describe "csv_import_rake" do
-
- before do
-  Rake.application.rake_require "tasks/csv_import"
-  Rake::Task.define_task(:environment)
- end
-
- it "imports csv data to database" do
-  Rake::Task["csv_import_rake"].invoke
- end
+RSpec.describe 'rake copy:data', type: :task do
+  subject { Rake::Task["copy:data"].invoke("spec/fixtures/test_csv.csv") }
+  
+  it 'enqueues async jobs to generate GoCardless refund event' do
+	# binding.pry
+    expect { subject }.to change{Movie.count}.from(0).to(2)
+  end
 end

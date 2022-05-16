@@ -1,0 +1,30 @@
+# movie_one:
+#     show_id: foo
+#     show_type: foo
+#     title: foo
+#     director: foo
+#     cast: poo
+#     country: foo
+#     date_added:
+#     release_year: 99
+#     rating: foo
+#     duration: foo
+#     listed_in: poo
+#     description: poo
+#     created_at: 2022-05-11 14:47:24.036965 UTC
+#     updated_at: 2022-05-11 14:47:24.036965 UTC
+# movie_t:
+#     show_id: foo645
+#     show_type: foo456
+#     title: tetete456
+#     director: foo456
+#     cast: poo456
+#     country: foo456
+#     date_added:
+#     release_year: 99
+#     rating: foo456
+#     duration: foo456
+#     listed_in: poo45
+#     description: poo456
+#     created_at: 2022-05-11 14:47:24.036965 UTC
+#     updated_at: 2022-05-11 14:47:24.036965 UTC
