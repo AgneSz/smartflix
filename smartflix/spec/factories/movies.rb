@@ -1,7 +1,6 @@
 FactoryBot.define do
  factory :movie do
    sequence(:show_id) { |n| 'show_id #{n}' }
-    # show_id { rand(1..8807) }
     show_type { 'MyString' }
     title { 'MyString' }
     director { 'MyString' }
@@ -13,7 +12,5 @@ FactoryBot.define do
     duration { 'MyString' }
     listed_in { 'MyString' }
     description { 'MyString' }
-    # created_at: 2022-05-11 14:47:24.036965 UTC
-    # updated_at: 2022-05-11 14:47:24.036965 UTC
  end
 end
