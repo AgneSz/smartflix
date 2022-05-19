@@ -7,7 +7,7 @@
         %img.card-img-top{:alt => "...", :src => "https://via.placeholder.com/150"}/
         .card-body
           %h4.card-title
-            = movie["title"]
-            (#{movie["release_year"]})
-          %h4.card-title= movie["type"]
-          %p.card-text= movie["description"]
+            = movie.title
+            (#{movie.release_year})
+          %h4.card-title= movie.show_type
+          %p.card-text= movie.description
