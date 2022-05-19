@@ -81,4 +81,5 @@ group :test do
   gem "webdrivers"
   # ===>Manually added gems<===
   gem 'database_cleaner-active_record'
+  gem 'shoulda-matchers', '~> 5.0'
 end
